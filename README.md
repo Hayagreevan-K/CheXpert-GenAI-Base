@@ -27,9 +27,6 @@ The project follows a **multi-stage design** to ensure reproducibility and modul
 
 ## 🧭 Pipeline Flowchart
 
-```mermaid
-flowchart TD
-
 A[Kaggle: CheXpert Dataset] --> B[Model Training (DenseNet121)]
 B --> C[Save Outputs (.pth, .json, .csv)]
 C --> D[Kaggle: Export Sample Images (subset of CheXpert)]
