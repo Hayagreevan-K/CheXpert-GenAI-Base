@@ -41,13 +41,15 @@ F --> G[Generate AI Radiology Reports]
 
 G --> H[Streamlit: Visualization Interface]
 
+H --> I[Grad-CAM Heatmap Overlay + OpenAI Text Report]
+
+I --> J[End User Adds New Data → Fine-Tuning Ready]
+
+
 # LINKS
 
 STREAMLIT --- http://localhost:8501/
 DRIVE --- https://drive.google.com/drive/folders/1-fy-eYzK0p0c2QAVRYzT6DgvLexPLAxN
 DATASET USED --- https://www.kaggle.com/datasets/ashery/chexpert
 
-H --> I[Grad-CAM Heatmap Overlay + OpenAI Text Report]
-
-I --> J[End User Adds New Data → Fine-Tuning Ready]
 
