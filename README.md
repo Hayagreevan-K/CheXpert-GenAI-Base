@@ -28,11 +28,20 @@ The project follows a **multi-stage design** to ensure reproducibility and modul
 ## 🧭 Pipeline Flowchart
 
 A[Kaggle: CheXpert Dataset] --> B[Model Training (DenseNet121)]
+
 B --> C[Save Outputs (.pth, .json, .csv)]
+
 C --> D[Kaggle: Export Sample Images (subset of CheXpert)]
+
 D --> E[Google Drive / Colab Integration]
+
 E --> F[Colab: Load Base Model + OpenAI Key]
+
 F --> G[Generate AI Radiology Reports]
+
 G --> H[Streamlit: Visualization Interface]
+
 H --> I[Grad-CAM Heatmap Overlay + OpenAI Text Report]
+
 I --> J[End User Adds New Data → Fine-Tuning Ready]
+
